@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #1d1c24;
+  color: #fdf6f6;
+}
+img {
+  max-width: 100px;
+  min-height: 70px;
+  margin: 10px;
+}
+
+.container {
+  display: grid;
+  /* background: aqua; */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "h1 h1 h1"
+    "cards cards res"
+    "cards cards usar"
+    "info como .";
+  gap: 30px;
+  margin: 30px;
+}
+
+.title {
+  display: block;
+  grid-area: h1;
+  text-align: center;
+  margin: 30px auto;
+  font-size: 3.5rem;
+}
+
+.cards {
+  grid-area: cards;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 30px;
+  box-sizing: border-box;
+  min-height: 400px;
+}
+
+.card-moedas {
+  color: black;
+  border-radius: 8px;
+  background-color: #e7e3e3;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.valorReal {
+  height: 40px;
+  font-size: 16px;
+  max-width: 270px;
+  min-width: 170px;
+}
+.valor {
+  padding-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+.valor p {
+  /* background-color: black; */
+  margin-top: 20px;
+}
+
+.resultado {
+  grid-area: res;
+  align-items: center;
+}
+
+.info {
+  grid-area: info;
+}
+
+.como-usar {
+  grid-area: como;
+}
+.resultado,
+.info,
+.como-usar p {
+  font-size: 2em;
+}
+
+.resultado,
+.info,
+.como-usar p {
+  font-size: 2em;
+}
+.info p + p {
+  padding-top: 30px;
+}
+
+.como-usar p + p {
+  padding-top: 30px;
+}
+
+.como-usar,
+.info {
+  padding: 20px;
+  border: 1px solid wheat;
+  border-radius: 5px;
+}

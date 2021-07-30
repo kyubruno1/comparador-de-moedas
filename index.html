@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Comparador de moedas</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Comparador de moedas Dolar x Iene</h1>
+      <div class="cards">
+        <div class="card-moedas">
+          <img src="./img/Flag_of_Brazil.svg" alt="" />
+          <p class="valor">Coloque a quantidade de dinheiro desejada</p>
+          <input type="number" class="valorReal" placeholder="Valor em reais" />
+        </div>
+        <div class="card-moedas">
+          <img src="./img/Flag_of_the_United_States.svg" alt="" />
+          <div class="valor dolar">
+            <p>Preencha o valor para atualizar as informações</p>
+          </div>
+        </div>
+        <div class="card-moedas">
+          <img src="./img/Flag_of_Japan.svg" alt="" />
+          <div class="valor iene">
+            <p>Preencha o seu valor para atualizar as informações</p>
+          </div>
+        </div>
+      </div>
+      <div class="resultado"></div>
+
+      <div class="info">
+        <p>Qual o intuito do site?</p>
+        <p>Descobrir de qual forma você compra mais Iene, via Dólar ou Real.</p>
+      </div>
+      <div class="como-usar">
+        <p>Como usar:</p>
+        <p>
+          Ao digitar um valor, a página vai atualizar os respectivos cards com a
+          última cotação do dia, com quanto você compra com R$ 1 e quanto você
+          compra com o valor que digitou.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
